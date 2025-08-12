@@ -15,9 +15,13 @@ Com este passo a passo, mesmo quem nunca usou VirtualBox poderá acompanhar e de
 O projeto utiliza o **Ubuntu Server 24.04.3 LTS**, uma versão estável e adequada para servidores. Você pode baixar a ISO diretamente no site oficial:
 
 [Download Ubuntu Server 24.04.3 LTS](https://ubuntu.com/download/server)
+> **Nota:** A versão do Ubuntu Server pode variar dependendo da data de acesso.  
+> Este documento foi atualizado em 12 de agosto de 2025.  
+> Sempre verifique o site oficial para a versão mais recente disponível.
 
 *Imagem: página de download do Ubuntu Server*  
-`![Download Ubuntu Server](imagens/ubuntu-server-download.png)`
+<img width="1915" height="985" alt="image" src="https://github.com/user-attachments/assets/45cddea3-ccdc-439b-a84f-b06a0f311d20" />
+
 
 ---
 
@@ -28,9 +32,14 @@ Para criar e gerenciar a máquina virtual onde o Ubuntu Server será instalado, 
 Baixe a versão mais recente (por exemplo, VirtualBox 7.1.12) no site oficial:  
 
 [Download VirtualBox](https://www.virtualbox.org/wiki/Downloads)
+> **Nota:** A versão do VirtualBox pode variar dependendo da data de acesso.  
+> Este documento foi atualizado em 12 de agosto de 2025.  
+> Sempre verifique o site oficial para a versão mais recente disponível.
 
 *Imagem: página de download do VirtualBox*  
-`![Download VirtualBox](imagens/virtualbox-download.png)`
+<img width="1907" height="971" alt="image" src="https://github.com/user-attachments/assets/da63bb6e-6ef6-4a9a-a8a3-6fb879fae8ff" />
+
+
 
 ---
 
