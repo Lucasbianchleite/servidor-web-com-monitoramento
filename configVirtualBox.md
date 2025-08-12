@@ -60,7 +60,7 @@ Após instalar o VirtualBox, siga os passos para criar sua máquina virtual:
 3. Após preencher, clique em **Finalizar**.
 
 *Imagem: formulário de criação da VM no VirtualBox*  
-`![Formulário criação VM](imagens/virtualbox-formulario-vm.png)`
+<img width="1353" height="769" alt="VIRTUALBOXCONFIG1" src="https://github.com/user-attachments/assets/086b3b5e-dc61-4077-84b1-772d772fe5d6" />
 
 ---
 
@@ -70,20 +70,25 @@ Agora, configure a memória RAM, CPU e rede da sua VM para garantir desempenho e
 
 1. Clique com o botão direito na VM criada e selecione **Configurações**.
 
-2. Na aba **Sistema > Memória**, ajuste a memória base disponível para a VM (exemplo: 2048 MB).
+2. Na aba **Sistema > Placa Mãe**, ajuste a memória base disponível para a VM (exemplo: 2048 MB).
 
 *Imagem: configuração de memória RAM*  
-`![Configuração Memória](imagens/virtualbox-memoria.png)`
+<img width="1234" height="726" alt="image" src="https://github.com/user-attachments/assets/fd10ad0a-f63f-4614-ae95-59790111b376" />
+
+
+
 
 3. Na aba **Sistema > Processador**, defina o número de núcleos que o servidor poderá usar.
 
 *Imagem: configuração do processador*  
-`![Configuração CPU](imagens/virtualbox-cpu.png)`
+<img width="1229" height="728" alt="image" src="https://github.com/user-attachments/assets/7872b3fc-bdbf-427c-9862-5e1631275247" />
+
 
 4. Na aba **Rede > Adaptador 1**, configure o modo como **Bridge (Bridged Adapter)** para que a VM tenha acesso à rede local e receba um IP do DHCP.
 
 *Imagem: configuração de rede*  
-`![Configuração Rede](imagens/virtualbox-rede.png)`
+<img width="1228" height="726" alt="image" src="https://github.com/user-attachments/assets/30d6e240-abf4-496d-81e4-bc635db0fdf3" />
+
 
 ---
 
