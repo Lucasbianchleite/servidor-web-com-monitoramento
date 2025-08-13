@@ -1,4 +1,4 @@
-# Etapa 4: Configuração do Script de Verificação (.sh)
+# Etapa 4: Configuração do Script de Verificação e testando (.sh)
 
 Nesta etapa, vamos implementar um **script Bash de monitoramento ativo**, responsável por:
 
@@ -49,10 +49,10 @@ sudo /usr/local/bin/monitoramento.sh
 <img width="1920" height="992" alt="teste do script" src="https://github.com/user-attachments/assets/d2f34050-d3e7-427a-b713-cbd63fdce8c6" />
 Com este teste de queda controlada do Nginx, ao executar o script de monitoramento, o webhook foi acionado automaticamente, registrando e notificando que o serviço estava inativo e confirmando que o servidor foi reiniciado com sucesso.
 
-*Isso demonstra que o script:
+### Isso demonstra que o script:
 
-*Detecta falhas no serviço web em tempo real;
+- Detecta falhas no serviço web em tempo real;
 
-*Executa a ação de recuperação automaticamente (restart do Nginx);
+- Executa a ação de recuperação automaticamente (restart do Nginx);
 
-*Envia notificações para o canal configurado via webhook, garantindo visibilidade imediata do incidente.
+- Envia notificações para o canal configurado via webhook, garantindo visibilidade imediata do incidente.
