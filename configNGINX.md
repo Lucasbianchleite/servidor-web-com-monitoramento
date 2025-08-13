@@ -65,17 +65,27 @@ Se a página padrão do **NGINX** for exibida, como mostrado anteriormente, sign
 ---
 
 ## 5. Configuração do Nginx para servir documento HTML personalizado
-:
+
+Após ter em mãos o HTML que será usado no projeto, disponível em: [Página HTML](index.html),  
+copie o arquivo para substituir a página padrão do Nginx:
+
 ```bash
-sudo apt update
+sudo nano /var/www/html/index.nginx-debian.html
+
 ```
+Ao abrir este arquivo, será exibido o HTML padrão do Nginx:
 
 
+<img width="1915" height="997" alt="html padrão visto" src="https://github.com/user-attachments/assets/f5989db9-e865-425a-b008-108653334f24" />
 
-[Ver página HTML](index.html)
+Exclua todo o conteúdo original e cole o HTML do projeto disponível em:  [Página HTML](index.html),  
 
-
-
+Após substituir o conteúdo, podemos testar a página no navegador.
+No navegador, digite o endereço IP do servidor Nginx:
+```
+http://S.E.U.I.P Ex: http://192.168.15.10
+```
+Se tudo estiver correto, a página exibida será a do projeto:
 
 <img width="1905" height="989" alt="image" src="https://github.com/user-attachments/assets/9828e9ed-c7cc-493d-90a1-79f901c2da0f" />
 
@@ -90,7 +100,7 @@ sudo apt update
 
 
 
-# Principais Diretórios e Arquivos do NGINX
+# Principais Diretórios e Arquivos do NGINX (apenas para estudo)
 
 ## 1. `/etc/nginx/` – Configurações Principais
 Essa é a pasta mais crítica para administração do NGINX.
