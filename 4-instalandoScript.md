@@ -6,7 +6,7 @@ Nesta etapa, vamos implementar um **script Bash de monitoramento ativo**, respon
 - Registrar logs de execução detalhados em `/var/log/monitoramento.log`, incluindo **timestamps** e códigos de resposta HTTP.
 - Detectar falhas no serviço Nginx e **executar reinício automático** via `systemctl`.
 - Integrar com serviços externos via **webhook do Discord**, enviando alertas estruturados com informações de status do servidor.
-- Garantir execução contínua quando agendado via **cron** ou **systemd timer**, permitindo monitoramento em tempo real sem intervenção manual.
+- Garantir execução contínua quando agendado via **cron**, permitindo monitoramento em tempo real sem intervenção manual.
 
 ### 1. Instalando o script
 
@@ -73,3 +73,30 @@ Com este teste de queda controlada do Nginx, ao executar o script de monitoramen
 - Executa a ação de recuperação automaticamente (restart do Nginx);
 
 - Envia notificações para o canal configurado via webhook, garantindo visibilidade imediata do incidente.
+
+##  automador do processo, e gerador de logs
+###  Agendamento com Cron
+
+Para que o script de monitoramento seja executado automaticamente em intervalos regulares, utilizamos o **cron**, o agendador de tarefas do Linux.
+
+---
+
+### 🔹 Passo 1: Abrir o crontab do usuário
+
+```bash
+crontab -e
+```
+
+ 📝 **Nota:**  O parâmetro `-e` no comando `crontab -e` significa **edit**, ou seja, abre o crontab do usuário atual para edição.Assim, você pode adicionar, alterar ou remover tarefas agendadas.
+
+Adicione uma linha para executar o script no intervalo desejado, por exemplo, a cada 1 minutos:  
+>    ```
+>    * * * * * /caminho/para/monitoramento.sh
+>    ```
+
+Salve e feche o editor. O cron executará o script automaticamente nos intervalos definidos.  
+<img width="1921" height="1009" alt="image" src="https://github.com/user-attachments/assets/5de500e0-953a-4cde-a79c-1abd6d9e11d8" />
+E assim, podemos observar que a automação está funcionando corretamente: mesmo após uma queda controlada da aplicação, o script detectou automaticamente o problema e reiniciou o servidor.
+
+## verificação dos logs
+
