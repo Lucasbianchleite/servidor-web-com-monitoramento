@@ -7,7 +7,7 @@
 SITE_URL="http://192.168.15.10"  
 # Endereço do site/servidor que será monitorado
 
-WEBHOOK_URL="https://discord.com/api/webhooks/1403424219403915344/looPMmd9kLnZ0ss6l0vTwYREtyt11Esl5_4Z4lx9Zp2MBBeXazPHiLit1BjIUeXVxmSs"
+WEBHOOK_URL="https://discord.com/api/webhooks/14@@@@@@@@@@@915344/looPMmd9kLnZ0ss@@@@@@@@@@@@@@@@@Zp2MBBeXazPH@@@@@2@@@@@@@@@VxmSs"
 # URL do webhook do Discord que receberá alertas
 
 LOG_FILE="/var/log/monitoramento.log"
