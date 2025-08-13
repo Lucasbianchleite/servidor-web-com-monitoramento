@@ -72,7 +72,7 @@ sudo apt update
 
 
 
-[Ver página HTML](pagina.html)
+[Ver página HTML](index.html)
 
 
 
