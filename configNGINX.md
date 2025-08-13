@@ -64,15 +64,20 @@ Se a página padrão do **NGINX** for exibida, como mostrado anteriormente, sign
 
 ---
 
+## 5. Configuração do Nginx para servir documento HTML personalizado
+:
+```bash
+sudo apt update
+```
+
+
+
+[Ver página HTML](pagina.html)
 
 
 
 
-
-
-
-
-
+<img width="1905" height="989" alt="image" src="https://github.com/user-attachments/assets/9828e9ed-c7cc-493d-90a1-79f901c2da0f" />
 
 
 
