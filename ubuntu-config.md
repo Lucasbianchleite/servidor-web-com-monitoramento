@@ -113,18 +113,22 @@ Preencha as seguintes informações:
 > ℹ️ O foco do projeto não é gerenciamento de usuários, então essa etapa será feita de forma simples.
 
 **Imagem:** tela de criação de usuário  
-`image`
+<img width="1848" height="1079" alt="image" src="https://github.com/user-attachments/assets/ee387228-22dc-4ae7-ae0e-f1313aff27a5" />
+
 
 ---
 
 ## 8. Instalação de Pacotes Adicionais
 O instalador perguntará se deseja instalar o **OpenSSH**:
 - Marque **Sim** para habilitar o acesso remoto via SSH.
+  <img width="1557" height="1075" alt="image" src="https://github.com/user-attachments/assets/9aee149b-f2a2-41a6-af3d-9c3c5f03377f" />
+
 
 A lista de pacotes adicionais exibida pode ser ignorada clicando em **Concluído**.
 
 **Imagem:** tela de instalação de pacotes adicionais  
-`image`
+<img width="1468" height="1064" alt="image" src="https://github.com/user-attachments/assets/4e4ab263-6d35-44e7-9be1-711cdbda25e9" />
+
 
 ---
 
@@ -133,7 +137,8 @@ Após confirmar, a instalação do Ubuntu Server será iniciada.
 Quando finalizada, o sistema estará pronto para configuração e uso no projeto.
 
 **Imagem:** tela final de instalação concluída  
-`image`
+<img width="1476" height="1072" alt="image" src="https://github.com/user-attachments/assets/d7374121-486b-437c-81b8-cd5ed4de27f1" />
+
 
 ---
 
