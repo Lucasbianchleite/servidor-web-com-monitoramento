@@ -15,4 +15,5 @@ No terminal do servidor, crie o arquivo do script:
 ```bash
 sudo nano /usr/local/bin/monitoramento.sh
 ```
-cole o script a seguir: 
+cole o script a seguir: [SCRIPT](monitoramento.sh)
+em seguida salve
