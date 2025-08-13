@@ -17,7 +17,24 @@ sudo nano /usr/local/bin/monitoramento.sh
 ```
 
 Cole o conteúdo do script de monitoramento: [script](monitoramento.sh)
-Após colar, salve o arquivo pressionando CTRL + O, confirme com Enter e saia do nano com CTRL + X
+Após colar, troque as variaveis para o seu servidor,e o seu webhook em questão, por exemplo:
+
+```bash
+SITE_URL="http://SEU.IP.DO.SERVIDOR"    Ex:  http://192.168.15.10"
+WEBHOOK_URL="https://discord.com/api/webhooks/SEUW3BHOOK123456789-1223456789"
+```
+> 📝 **Nota:** Para obter um Webhook no Discord e enviar mensagens automaticamente para um canal:
+>
+> 1.Abra o Discord e crie ou acesse o servidor desejado.
+> 2. Clique no **canal de texto** e depois no ícone de **engrenagem** ⚙️.
+> 3. No menu lateral, vá em **Integrações → Webhooks → Novo Webhook**.
+> 4. Dê um nome ao webhook e selecione o canal que receberá as mensagens.
+> 5. Clique em **Copiar Webhook URL** — esse é o endereço que seu script vai usar.
+> 6. Salve as alterações para ativar o webhook.
+>
+> ⚠️ **Importante:** Nunca compartilhe o URL do webhook publicamente, pois qualquer pessoa com ele pode enviar mensagens ao seu canal.
+
+salve o arquivo pressionando CTRL + O, confirme com Enter e saia do nano com CTRL + X
 
 <img width="1919" height="989" alt="image" src="https://github.com/user-attachments/assets/897f12c3-9650-4cd7-819d-4436c49c5fc2" />
 
