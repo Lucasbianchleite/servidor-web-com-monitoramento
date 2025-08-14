@@ -4,7 +4,7 @@ Após concluir a instalação do sistema operacional, vamos dar os primeiros pas
 
 ---
 ## 1. Atualizar os Repositórios
-Antes de instalar qualquer coisa, é recomendado atualizar os repositórios do sistema:
+Antes de instalar qualquer software, recomenda-se atualizar os repositórios do sistema:
 ```bash
 sudo apt update
 ```
@@ -23,7 +23,7 @@ Após executar o comando, o sistema inicia o processo de instalação do NGINX.
 
 ---
 ## 3. Iniciar e Ativar o NGINX
-Vamos configurar o NGINX para iniciar imediatamente e também iniciar automaticamente junto com o sistema.
+Vamos configurar o NGINX para iniciar imediatamente e garantir que seja iniciado automaticamente na inicialização do sistema.
 
 Como **root**:
 ```bash
