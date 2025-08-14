@@ -48,7 +48,7 @@ sudo chmod +x /usr/local/bin/monitoramento.sh
 Isso garante que o script possa ser executado diretamente como um programa.
 
 ### 3. Testando o Script
-ara verificar se tudo está funcionando corretamente, execute:
+Para verificar se tudo está funcionando corretamente, execute:
 
 ```bash
 sudo /usr/local/bin/monitoramento.sh
@@ -90,7 +90,7 @@ crontab -e
  📝 **Nota:**  O parâmetro `-e` no comando `crontab -e` significa **edit**, ou seja, abre o crontab do usuário atual para edição.Assim, você pode adicionar, alterar ou remover tarefas agendadas.
 
 Adicione uma linha para executar o script no intervalo desejado, por exemplo, a cada 1 minutos:  
->    ```
+>    ```bash
 >    * * * * * /caminho/para/monitoramento.sh
 >    ```
 
@@ -98,5 +98,37 @@ Salve e feche o editor. O cron executará o script automaticamente nos intervalo
 <img width="1921" height="1009" alt="image" src="https://github.com/user-attachments/assets/5de500e0-953a-4cde-a79c-1abd6d9e11d8" />
 E assim, podemos observar que a automação está funcionando corretamente: mesmo após uma queda controlada da aplicação, o script detectou automaticamente o problema e reiniciou o servidor.
 
-## verificação dos logs
+### Criação e verificação dos logs
+Nesta etapa, vamos configurar o arquivo de log do script de monitoramento.
+Usamos o comando `touch` para criar o arquivo vazio na pasta `/var/log`:
+```bash
+touch /var/log/monitoramento.log
+ ```
+após isso, vem a etapa de permissão
+  ```bash
+chmod 666 /var/log/monitoramento.log
+ ```
+> 📝 **Nota:** Por que usar `chmod 666` no arquivo de log:
+
+> 1. O número `666` define permissões de leitura e escrita para todos os usuários (dono, grupo e outros).
+> 2. Isso garante que qualquer processo ou script, independentemente do usuário que o executa, consiga registrar informações no log.
+> 3. A permissão é dividida assim:
+> 3.1. `6` para o dono → leitura (`r`) + escrita (`w`)
+> 3.2. `6` para o grupo → leitura (`r`) + escrita (`w`)
+> 3.3. `6` para os outros → leitura (`r`) + escrita (`w`)
+> 4. É útil em scripts que serão executados por diferentes usuários ou serviços.
+
+
+### Teste Final
+
+Nesta etapa, verificamos se o arquivo de log está sendo corretamente gravado.  
+Para isso, utilizamos o comando:
+
+```bash
+cat /var/log/monitoramento.log
+```
+<img width="1916" height="986" alt="image" src="https://github.com/user-attachments/assets/4a01b120-23a4-4025-842d-e154094b4a92" />
+
+Com este procedimento, concluímos que a configuração do log está correta e funcional.
+Dessa forma, podemos ter confiança de que qualquer anomalia será registrada e devidamente alertada pelo sistema de monitoramento.
 
