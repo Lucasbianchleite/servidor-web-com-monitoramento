@@ -1,12 +1,12 @@
-# Configuração do Ubuntu Server na Máquina Virtual
+# Configuração do Ubuntu Server em Máquina Virtual
 
 ## Introdução
 Neste documento, você aprenderá a instalar e configurar o **Ubuntu Server** em uma máquina virtual previamente criada no VirtualBox.  
-Esse será o sistema operacional base para o projeto **servidor-web-com-monitoramento**.
+Este será o sistema operacional base para o projeto **servidor-web-com-monitoramento**.
 
 O passo a passo inclui desde a seleção do idioma e layout do teclado até a configuração de rede, criação de usuário e instalação de pacotes essenciais como o **OpenSSH**.
 
-Com este guia, mesmo quem nunca instalou um servidor Linux conseguirá seguir e deixar o ambiente pronto para a próxima etapa do projeto.
+Com este guia, mesmo usuários sem experiência prévia em servidores Linux poderão configurar o ambiente para a próxima etapa do projeto.
 
 ---
 
