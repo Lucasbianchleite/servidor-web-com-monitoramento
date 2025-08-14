@@ -10,6 +10,5 @@ O objetivo é desenvolver e testar habilidades em **Linux, automação e monitor
 - Script de monitoramento executado a cada minuto.
 - Envio automático de alertas em caso de indisponibilidade.
 - Registro de eventos em logs do servidor.
-- Possibilidade de automação completa da configuração via **User Data**.
 
 
