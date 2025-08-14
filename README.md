@@ -12,3 +12,5 @@ O objetivo é desenvolver e testar habilidades em **Linux, automação e monitor
 - Registro de eventos em logs do servidor.
 
 
+### Primeiros passos
+[CONFIGURAÇÃO VIRUTAL BOX](configVirtualBox.md)
