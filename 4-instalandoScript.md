@@ -74,7 +74,7 @@ Com este teste de queda controlada do Nginx, ao executar o script de monitoramen
 
 - Envia notificações para o canal configurado via webhook, garantindo visibilidade imediata do incidente.
 
-##  automador do processo, e gerador de logs
+##  Automação do processo e geração de logs
 ###  Agendamento com Cron
 
 Para que o script de monitoramento seja executado automaticamente em intervalos regulares, utilizamos o **cron**, o agendador de tarefas do Linux.
