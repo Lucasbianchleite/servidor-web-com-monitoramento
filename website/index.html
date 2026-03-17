@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Servidor Web com Monitoramento Automático</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container nav-content">
+      <div class="logo">SOC<span>-Lab</span></div>
+
+      <div class="nav-links">
+        <a href="#sobre">Sobre</a>
+        <a href="#funcionalidades">Funcionalidades</a>
+        <a href="#fluxo">Fluxo</a>
+        <a href="#stack">Stack</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="badge">🚀 Projeto de Infraestrutura + Monitoramento</div>
+
+          <h1>Servidor Web com <span>Monitoramento Automático</span></h1>
+
+          <p>
+            Projeto focado em infraestrutura Linux com <strong>Nginx</strong>, automação de verificações
+            periódicas e envio de alertas em tempo real para canais como
+            <strong>Discord</strong>, <strong>Telegram</strong> e <strong>Slack</strong>.
+            A proposta é garantir visibilidade, resposta rápida a falhas e uma base sólida para estudos
+            de DevOps, observabilidade e operações.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#funcionalidades" class="btn btn-primary">Ver funcionalidades</a>
+            <a href="#stack" class="btn btn-secondary">Explorar stack</a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="terminal-window">
+            <div class="terminal-topbar">
+              <div class="terminal-buttons">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <div class="terminal-title">monitor@server: ~/status</div>
+            </div>
+
+            <div class="terminal">
+              <div class="line"><span class="prompt">root@soc-lab:~#</span> systemctl status nginx</div>
+              <div class="line ok">● nginx.service - active (running)</div>
+
+              <div class="line"><span class="prompt">root@soc-lab:~#</span> ./monitor.sh</div>
+              <div class="line warn">[INFO] Verificando disponibilidade do site...</div>
+              <div class="line ok">[OK] HTTP 200 - Serviço online</div>
+
+              <div class="line"><span class="prompt">root@soc-lab:~#</span> tail -f /var/log/monitoramento.log</div>
+              <div class="line err blink-alert">[ALERTA] Falha detectada - notificação enviada ao Discord</div>
+
+              <div class="line typing-line">
+                <span class="prompt">root@soc-lab:~#</span>
+                <span class="typing-text"></span><span class="cursor">█</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container stats">
+        <div class="stat">
+          <h3>24/7</h3>
+          <p>Monitoramento contínuo</p>
+        </div>
+
+        <div class="stat">
+          <h3>1 min</h3>
+          <p>Intervalo de verificação</p>
+        </div>
+
+        <div class="stat">
+          <h3>3+</h3>
+          <p>Canais de alerta</p>
+        </div>
+
+        <div class="stat">
+          <h3>Logs</h3>
+          <p>Registro detalhado de eventos</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="sobre">
+      <div class="container">
+        <div class="overview-box">
+          <div class="overview-badge">📘 Visão Geral do Projeto</div>
+
+          <h2 class="section-title">Infraestrutura simples, monitoramento real</h2>
+
+          <p class="section-subtitle">
+            Este projeto simula um ambiente de operação com <strong>servidor web</strong>,
+            <strong>checagens automatizadas</strong>, <strong>registro em logs</strong> e
+            <strong>alertas em tempo real</strong>. A ideia é mostrar, de forma prática,
+            como unir disponibilidade, automação e resposta rápida a incidentes em um laboratório
+            com cara de ambiente profissional.
+          </p>
+
+          <div class="overview-highlights">
+            <div class="overview-item">
+              <span class="overview-icon">🌐</span>
+              <div>
+                <h3>Publicação Web</h3>
+                <p>Nginx servindo a aplicação e respondendo requisições HTTP.</p>
+              </div>
+            </div>
+
+            <div class="overview-item">
+              <span class="overview-icon">📡</span>
+              <div>
+                <h3>Monitoramento Contínuo</h3>
+                <p>Checagens automáticas para validar disponibilidade do serviço.</p>
+              </div>
+            </div>
+
+            <div class="overview-item">
+              <span class="overview-icon">🚨</span>
+              <div>
+                <h3>Resposta Rápida</h3>
+                <p>Notificações imediatas para reduzir o tempo de reação.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="funcionalidades">
+      <div class="container">
+        <h2 class="section-title">Principais Funcionalidades</h2>
+        <p class="section-subtitle">
+          Estrutura simples, mas com cara de ambiente real: servidor, automação, monitoramento e alerta.
+        </p>
+
+        <div class="grid-3">
+          <article class="card">
+            <div class="icon">🌐</div>
+            <h3>Servidor Web</h3>
+            <p>
+              Configuração de Nginx para hospedar uma página HTML personalizada com foco em desempenho,
+              organização e apresentação profissional do serviço.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="icon">📡</div>
+            <h3>Monitoramento Automatizado</h3>
+            <p>
+              Script responsável por verificar a disponibilidade do site em intervalos regulares,
+              identificando rapidamente quedas ou falhas de resposta.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="icon">🚨</div>
+            <h3>Alertas em Tempo Real</h3>
+            <p>
+              Envio automático de notificações para canais de comunicação da equipe,
+              reduzindo o tempo de reação diante de incidentes.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="grid-3">
+          <article class="card">
+            <div class="icon">📝</div>
+            <h3>Registro em Logs</h3>
+            <ul class="features-list">
+              <li>Histórico das verificações executadas</li>
+              <li>Registro de falhas e indisponibilidades</li>
+              <li>Base para auditoria e troubleshooting</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="icon">⚙️</div>
+            <h3>Automação com User Data</h3>
+            <ul class="features-list">
+              <li>Provisionamento mais rápido</li>
+              <li>Padronização da configuração</li>
+              <li>Reprodução facilitada do ambiente</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="icon">🎯</div>
+            <h3>Uso Prático</h3>
+            <ul class="features-list">
+              <li>Laboratórios de estudo</li>
+              <li>Projetos de portfólio</li>
+              <li>Base inicial para observabilidade</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="fluxo">
+      <div class="container">
+        <h2 class="section-title">Fluxo do Projeto</h2>
+        <p class="section-subtitle">
+          Um fluxo simples, direto e fácil de explicar em apresentação ou README.
+        </p>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-step">1</div>
+            <div>
+              <h3>Servidor Nginx em execução</h3>
+              <p>O serviço web publica a aplicação HTML e responde às requisições HTTP do ambiente.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-step">2</div>
+            <div>
+              <h3>Script realiza checagens periódicas</h3>
+              <p>Uma rotina automatizada testa o acesso ao site em intervalos definidos.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-step">3</div>
+            <div>
+              <h3>Falhas são registradas</h3>
+              <p>Se houver erro de conexão, timeout ou resposta inválida, o evento é salvo em log.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-step">4</div>
+            <div>
+              <h3>Notificação é enviada</h3>
+              <p>O time recebe um alerta imediato por Discord, Telegram ou Slack para agir rapidamente.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="stack">
+      <div class="container">
+        <h2 class="section-title">Tecnologias Utilizadas</h2>
+        <p class="section-subtitle">
+          Ferramentas escolhidas para construir uma base objetiva, útil e fácil de demonstrar.
+        </p>
+
+        <div class="card">
+          <div class="stack">
+            <span class="chip">Linux</span>
+            <span class="chip">Nginx</span>
+            <span class="chip">HTML5</span>
+            <span class="chip">CSS3</span>
+            <span class="chip">Shell Script</span>
+            <span class="chip">Cron ou Systemd</span>
+            <span class="chip">Logs</span>
+            <span class="chip">Discord Webhook</span>
+            <span class="chip">Telegram Bot</span>
+            <span class="chip">Slack Webhook</span>
+            <span class="chip">User Data</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <div class="cta-box">
+          <h2>Projeto ideal para portfólio técnico</h2>
+          <p>
+            Uma implementação enxuta, visualmente profissional e fácil de expandir com
+            observabilidade, containers, dashboards e integração com ferramentas de segurança.
+          </p>
+          <a href="#sobre" class="btn btn-primary">Voltar ao topo do projeto</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 - Projeto de Servidor Web com Monitoramento Automático | Desenvolvido para fins educacionais e práticos
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
