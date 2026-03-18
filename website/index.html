@@ -8,6 +8,9 @@
 </head>
 <body>
 
+  <canvas class="matrix-side matrix-left" id="matrixLeft" aria-hidden="true"></canvas>
+  <canvas class="matrix-side matrix-right" id="matrixRight" aria-hidden="true"></canvas>
+
   <nav class="navbar">
     <div class="container nav-content">
       <div class="logo">SOC<span>-Lab</span></div>
@@ -25,7 +28,10 @@
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-content">
-          <div class="badge">🚀 Projeto de Infraestrutura + Monitoramento</div>
+          <div class="badge">
+            <span class="badge-icon">🚀</span>
+            <span class="badge-text">Infraestrutura Linux • Monitoramento • Alertas em tempo real</span>
+          </div>
 
           <h1>Servidor Web com <span>Monitoramento Automático</span></h1>
 
@@ -66,8 +72,10 @@
               <div class="line err blink-alert">[ALERTA] Falha detectada - notificação enviada ao Discord</div>
 
               <div class="line typing-line">
-                <span class="prompt">root@soc-lab:~#</span>
-                <span class="typing-text"></span><span class="cursor">█</span>
+                <span class="prompt prompt-inline">root@soc-lab:~#</span>
+                <span class="typing-shell">
+                  <span class="typing-text"></span><span class="cursor">█</span>
+                </span>
               </div>
             </div>
           </div>
@@ -76,23 +84,27 @@
 
       <div class="container stats">
         <div class="stat">
+          <span class="stat-label">Disponibilidade</span>
           <h3>24/7</h3>
-          <p>Monitoramento contínuo</p>
+          <p>Monitoramento contínuo do serviço</p>
         </div>
 
         <div class="stat">
+          <span class="stat-label">Frequência</span>
           <h3>1 min</h3>
-          <p>Intervalo de verificação</p>
+          <p>Intervalo entre verificações automáticas</p>
         </div>
 
         <div class="stat">
+          <span class="stat-label">Alertas</span>
           <h3>3+</h3>
-          <p>Canais de alerta</p>
+          <p>Canais integrados para resposta rápida</p>
         </div>
 
         <div class="stat">
+          <span class="stat-label">Auditoria</span>
           <h3>Logs</h3>
-          <p>Registro detalhado de eventos</p>
+          <p>Registro técnico detalhado dos eventos</p>
         </div>
       </div>
     </section>
